@@ -1,0 +1,379 @@
+/*Estilos y Atributos Generales=======================================*/
+/*Lo que sale aqui aplica para cualquier pagina.*/
+
+* {
+    background: #c8c8c8;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+     
+}
+
+.logo {
+    padding: 0%;
+    font-size: 36px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: darkblue;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Oswald", sans-serif;
+    
+}
+
+p {
+    text-align: justify;
+}
+
+img {
+    display:block;
+    max-width: 100%;
+    margin-top: 120px;
+}
+
+
+
+/*Estilo del footer=======================================*/
+
+
+
+
+/*Estilo del Header (Titulo Principal)=======================================*/
+
+.header {
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color:darkblue;
+    letter-spacing: -1px;
+    
+}
+
+.header .contenedor {
+    display: flex;
+}
+
+
+
+/*Estilos de Menu=======================================*/
+
+.nav {
+    position:absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+}
+
+.menu {
+    list-style: none;
+    
+
+}
+
+.links {
+    display: block;
+    padding: 15px;
+    background: orange;
+    text-decoration: none;
+    color: blue;
+
+}
+
+.links:hover {
+    background: white;
+    color: orange;
+}
+
+
+/*Estilo del formulario*/
+
+.form {
+    border-radius: 3px;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 10px;
+    border: none;
+   
+}
+
+textarea {
+    min-height: 100px;
+    min-height: 200px;
+    max-width: 100%;  
+      
+}
+
+#boton {
+    border-color: darkblue;
+    padding: 10px;    
+}
+
+#boton:hover {
+    cursor: pointer;
+}
+
+
+/*Estilo del Slider*/
+
+ul, li {
+    list-style: none inside;
+    text-decoration: none;
+}
+
+ul.slider {
+    position:relative;
+}
+
+ul.slider li {
+    opacity: 0;
+    transition: opacity .5s;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin:10px;
+    padding:10px;
+    background: lightgrey;
+}
+
+ul.slider li:first-child {
+    opacity: 1;
+}
+
+ul.slider li:target {
+    opacity: 1;
+}
+
+nav {
+    position:relative;
+    top:250px;
+    
+        
+}
+
+/*=====================================================================================================*/
+
+
+/*Estilos Responsivos*/
+
+/*Estilo para sobre 500px*/
+@media (min-width:500px) {
+
+    img {
+        margin-top: 0;
+    }
+
+/*Menu*/
+
+    .menu li {
+        display: inline-block;
+    }
+
+
+/*Inicio*/
+
+    .banner_inicio {
+        top: 100px   
+    }
+
+    .contenedor1 {
+        display: inline-block;
+        height: 300px;
+        left: 10px;
+        right: 150px;
+        position: absolute;
+        top: 150px;
+        background-color: transparent;
+    }
+
+    .banner_titulo  {
+        background: transparent;
+    }
+
+    .banner_txt {
+        background: transparent;
+    }
+
+/*Quienes Somos*/
+    
+    .banner_QS {
+        top: 100px          
+    }
+
+    .contenedor2 {
+        display: inline-block;
+        height: 300px;
+        left: 10px;
+        right: 150px;
+        position: absolute;
+        top: 120px;
+        background-color: transparent;
+    }
+
+    .info_titulo  {
+        background: transparent;
+    }
+
+    .info_txt {
+        background: transparent;
+    }
+
+/*Contacto*/
+
+    .formulario {
+        top: 100px   
+    }
+
+    .contenedor3 {
+        display: inline-block;
+        height: 300px;
+        left: 10px;
+        right: 150px;
+        position: absolute;
+        top: 120px;
+        background-color: transparent;
+    }
+
+    .form_titulo  {
+        background: transparent;
+    }
+
+    .form_txt {
+        background: transparent;
+    }
+
+    input {
+        
+        width: 50%;
+        
+    }
+
+    textarea {
+        width: 70%;
+    }
+
+    #boton {
+        width: 30%;
+        margin: auto;
+    }
+}
+
+
+/*Estilo para sobre 800 px*/
+@media (min-width:800px) {
+
+    * {
+        background-image: url(/img/capa.png), url(/img/fondo.jpg);
+        background-size: 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        
+    }
+
+    img {
+        visibility:hidden
+    }
+
+/*Menu*/
+
+    .menu li {
+        display: inline-block;
+    }
+
+
+/*Inicio*/
+
+    .banner_inicio {
+        top: 100px   
+    }
+
+    .contenedor1 {
+        display: inline-block;
+        height: 300px;
+        left: 10px;
+        right: 150px;
+        position: absolute;
+        top: 120px;
+        background-color: transparent;
+    }
+
+    .banner_titulo  {
+        background: transparent;
+    }
+
+    .banner_txt {
+        background: transparent;
+    }
+
+/*Quienes Somos*/
+    
+    .banner_QS {
+        top: 100px          
+    }
+
+    .contenedor2 {
+        display: inline-block;
+        height: 300px;
+        left: 10px;
+        right: 150px;
+        position: absolute;
+        top: 120px;
+        background-color: transparent;
+    }
+
+    .info_titulo  {
+        background: transparent;
+    }
+
+    .info_txt {
+        background: transparent;
+    }
+
+/*Contacto*/
+
+    .formulario {
+        top: 120px   
+    }
+
+    input {
+        
+        width: 50%;
+        
+    }
+
+    textarea {
+        width: 70%;
+    }
+
+    #boton {
+        width: 30%;
+        margin: auto;
+    }
+
+    .form {
+        top: 200px;
+        position: absolute;
+        background:rgba(0, 0, 8, 0.5)
+    }
+
+    ::placeholder {
+        color:darkblue
+    }    
+}

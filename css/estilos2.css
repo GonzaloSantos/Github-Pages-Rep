@@ -1,0 +1,20 @@
+* {
+   
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: darkblue;
+   
+}
+
+.display-3, .banner_titulo, h1 {
+    font-family: Oswald;
+    letter-spacing: -1;
+}
+
+.navbar-brand {
+    color: darkblue;
+}
+
+.logo {
+    width: 50%;
+}
